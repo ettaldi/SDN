@@ -32,8 +32,3 @@ Le contrôleur SDN permet de configurer dynamiquement les équipements via des A
 
 ## Python et HPE VAN  
 Python est utilisé pour interagir avec les contrôleurs HPE VAN, notamment pour automatiser des tâches réseau ou développer des fonctionnalités spécifiques.
-
----
-
-## License  
-This project is open source and available under the [MIT License](LICENSE).
