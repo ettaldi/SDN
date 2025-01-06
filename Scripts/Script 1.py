@@ -24,5 +24,3 @@ net.addController(controller)
 net.start()
 
 CLI(net)
-
-net.stop()
