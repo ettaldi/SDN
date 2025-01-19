@@ -7,9 +7,9 @@ class Topology(Topo):
     def build(self):
         switch = self.addSwitch('s1')
 
-        host1 = self.addHost('h1', ip='192.168.30.5/24')
-        host2 = self.addHost('h2', ip='192.168.30.5/24')
-        host3 = self.addHost('h3', ip='192.168.30.5/24')
+        host1 = self.addHost('h1', ip='192.168.29.5/24')
+        host2 = self.addHost('h2', ip='192.168.29.6/24')
+        host3 = self.addHost('h3', ip='192.168.29.7/24')
 
         self.addLink(host1, switch)
         self.addLink(host2, switch)
@@ -18,7 +18,7 @@ class Topology(Topo):
 
 net = Mininet(topo=Topology(), controller=None)
 
-controller = RemoteController('c0',ip=10.10.1.129,port=6633)
+controller = RemoteController('c0',ip=192.168.29.129,port=8443)
 net.addController(controller)
 
 net.start()
